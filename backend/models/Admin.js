@@ -24,10 +24,14 @@ const AdminSchema = new mongoose.Schema({
 
 // Hash password before saving
 AdminSchema.pre("save", async function (next) {
+  // Only hash the password if it's modified (or new)
   if (!this.isModified("password")) return next()
 
   try {
+    // Generate a salt
     const salt = await bcrypt.genSalt(10)
+
+    // Hash the password along with the new salt
     this.password = await bcrypt.hash(this.password, salt)
     next()
   } catch (error) {
@@ -35,9 +39,9 @@ AdminSchema.pre("save", async function (next) {
   }
 })
 
-// Method to compare passwords
+// Method to compare passwords - simplified and more robust
 AdminSchema.methods.comparePassword = async function (candidatePassword) {
-  return await bcrypt.compare(candidatePassword, this.password)
+  return bcrypt.compare(candidatePassword, this.password)
 }
 
 module.exports = mongoose.model("Admin", AdminSchema)

@@ -4,6 +4,8 @@ const cors = require("cors")
 const http = require("http")
 const socketIo = require("socket.io")
 const dotenv = require("dotenv")
+const path = require("path") // ✅ Added line
+
 const appointmentRoutes = require("./routes/appointment.routes")
 const adminRoutes = require("./routes/admin.routes")
 const authMiddleware = require("./middleware/auth.mw")
@@ -61,3 +63,8 @@ mongoose
   .catch((err) => {
     console.error("MongoDB connection error:", err)
   })
+
+// ✅ Added line to serve React build
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/public', 'index.html'))
+})

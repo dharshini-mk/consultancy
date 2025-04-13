@@ -1,6 +1,7 @@
 const express = require("express")
 const router = express.Router()
 const jwt = require("jsonwebtoken")
+const bcrypt = require("bcryptjs") // Add this import
 const Admin = require("../models/Admin")
 const Appointment = require("../models/Appointment")
 const authMiddleware = require("../middleware/auth.mw")
@@ -12,16 +13,40 @@ const { sendWhatsAppMessage } = require("../utils/whatsapp")
 router.post("/login", async (req, res) => {
   try {
     const { username, password } = req.body
+    console.log("Login attempt for username:", username)
 
     // Check if admin exists
     const admin = await Admin.findOne({ username })
     if (!admin) {
+      console.log("Admin not found:", username)
       return res.status(400).json({ message: "Invalid credentials" })
     }
 
-    // Check password
-    const isMatch = await admin.comparePassword(password)
+    console.log("Admin found:", admin.username)
+
+    // Try both methods to compare passwords for debugging
+    let isMatch = false
+
+    // Method 1: Using the model method
+    try {
+      isMatch = await admin.comparePassword(password)
+      console.log("Password match using model method:", isMatch)
+    } catch (err) {
+      console.error("Error using model method:", err)
+    }
+
+    // Method 2: Using bcrypt directly as fallback
     if (!isMatch) {
+      try {
+        isMatch = await bcrypt.compare(password, admin.password)
+        console.log("Password match using bcrypt directly:", isMatch)
+      } catch (err) {
+        console.error("Error using bcrypt directly:", err)
+      }
+    }
+
+    if (!isMatch) {
+      console.log("Password does not match")
       return res.status(400).json({ message: "Invalid credentials" })
     }
 
@@ -35,10 +60,11 @@ router.post("/login", async (req, res) => {
 
     jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1d" }, (err, token) => {
       if (err) throw err
+      console.log("Token generated successfully")
       res.json({ token })
     })
   } catch (err) {
-    console.error(err.message)
+    console.error("Login error:", err.message)
     res.status(500).send("Server error")
   }
 })
