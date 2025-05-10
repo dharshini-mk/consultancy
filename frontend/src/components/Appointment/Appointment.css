@@ -1,0 +1,277 @@
+.appointment-page {
+  min-height: 100vh;
+  background-color: #fdf6ec;
+}
+
+.appointment-hero {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.appointment-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+}
+
+.appointment-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.appointment-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.appointment-hero-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.appointment-container {
+  max-width: 900px;
+  margin: -50px auto 80px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.appointment-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e6ccb2;
+  color: #3c2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.step.active .step-number {
+  background-color: #9c6644;
+  color: white;
+}
+
+.step-text {
+  font-size: 0.9rem;
+  color: #6c5f5f;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.step.active .step-text {
+  color: #9c6644;
+}
+
+.step-connector {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #e6ccb2;
+  margin: 0 15px;
+  position: relative;
+  top: -20px;
+  z-index: 1;
+  max-width: 100px;
+}
+
+.appointment-form-wrapper {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.step-content {
+  text-align: center;
+}
+
+.step-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #3c2f2f;
+}
+
+.step-content p {
+  color: #6c5f5f;
+  margin-bottom: 30px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.service-option {
+  background-color: #f7ede2;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-option:hover {
+  background-color: #e6ccb2;
+  transform: translateY(-5px);
+}
+
+.service-option.selected {
+  background-color: #9c6644;
+  color: white;
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #9c6644;
+  transition: all 0.3s ease;
+}
+
+.service-option.selected .service-icon {
+  color: white;
+}
+
+.service-option h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.selected-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  color: #9c6644;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.date-time-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.date-picker-container,
+.time-slots-container {
+  text-align: left;
+}
+
+.date-picker-container label,
+.time-slots-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #3c2f2f;
+}
+
+.date-picker {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e6ccb2;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #3c2f2f;
+  background-color: #fff;
+}
+
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.time-slot {
+  background-color: #f7ede2;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.time-slot:hover {
+  background-color: #e6ccb2;
+}
+
+.time-slot.selected {
+  background-color: #9c6644;
+  color: white;
+}
+
+.loading-slots,
+.no-slots-message {
+  padding: 20px;
+  text-align: center;
+  background-color: #f7ede2;
+  border-radius: 5px;
+  color: #6c5f5f;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #3c2f2f;
+  display: flex;
+}

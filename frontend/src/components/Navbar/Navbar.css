@@ -1,0 +1,259 @@
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  height: 70px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: #9c6644;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo-image {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  color: #3c2f2f;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links::after {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #9c6644;
+  transition: width 0.3s ease;
+}
+
+.nav-links:hover {
+  color: #9c6644;
+}
+
+.nav-links:hover::after {
+  width: 30px;
+}
+
+.nav-links.active {
+  color: #9c6644;
+}
+
+.nav-links.active::after {
+  width: 30px;
+}
+
+.nav-icon {
+  margin-right: 8px;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.book-now-btn {
+  background-color: #9c6644;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(156, 102, 68, 0.25);
+}
+
+.book-now-btn:hover {
+  background-color: #7c4824;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(156, 102, 68, 0.3);
+  color: white;
+}
+
+.btn-icon {
+  margin-right: 8px;
+}
+
+.admin-btn {
+  background-color: #e6ccb2;
+  color: #3c2f2f;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-btn:hover {
+  background-color: #d5b89a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar-container {
+    padding: 0 15px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    opacity: 0;
+    background: white;
+    transition: all 0.5s ease;
+    padding-top: 20px;
+  }
+
+  .nav-menu.active {
+    right: 0;
+    opacity: 1;
+    z-index: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-item {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-links::after {
+    bottom: 15px;
+  }
+
+  .nav-links.active {
+    border-bottom: none;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5rem auto;
+    border-radius: 30px;
+    width: 80%;
+    background: #9c6644;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 14px 20px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links-mobile:hover {
+    background: #7c4824;
+    color: white;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #9c6644;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+}
