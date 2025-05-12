@@ -99,7 +99,7 @@ const SlotManager = ({ token, socket }) => {
 
     try {
       const response = await axios.put(
-        `/api/admin/bookings/${id}/approve`,
+        `https://backend-28ww.onrender.com/api/admin/bookings/${id}/approve`,
         {},
         {
           headers: {
@@ -162,7 +162,7 @@ const handleRetrySMS = async (id) => {
 
   try {
     const response = await axios.post(
-      `/api/admin/bookings/${id}/retry-sms`,
+      `https://backend-28ww.onrender.com/api/admin/bookings/${id}/retry-sms`,
       {},
       {
         headers: {
