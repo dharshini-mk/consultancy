@@ -27,7 +27,7 @@ const SlotManager = ({ token, socket }) => {
     setLoading(true)
 
     try {
-      const response = await axios.get("/api/admin/bookings", {
+      const response = await axios.get("https://backend-28ww.onrender.com/api/admin/bookings", {
         params: {
           ...filters,
           page: pagination.page,
