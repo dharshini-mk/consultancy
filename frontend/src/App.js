@@ -23,7 +23,7 @@ function App() {
 
   // Set default base URL for axios
   useEffect(() => {
-    axios.defaults.baseURL = process.env.REACT_APP_API_URL || "https://consultancy-9f98.onrender.com"
+    axios.defaults.baseURL ="https://backend-28ww.onrender.com"
   }, [])
 
   return (
