@@ -24,7 +24,7 @@ const Footer = () => {
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/thenmozhi_makeoverartistry?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
@@ -41,9 +41,6 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About Us</Link>
                 </li>
                 <li>
                   <Link to="/services/hair">Hair Services</Link>
@@ -65,11 +62,11 @@ const Footer = () => {
               <ul>
                 <li>
                   <FontAwesomeIcon icon={faMapMarkerAlt} />
-                  <span>123 & 124, 3rd Floor, Ispahani Centre, Nungambakkam High Rd, Chennai, Tamil Nadu 600034</span>
+                  <span> 87, Kasianna street, Nasiyanur Rd, Edayankattuvalasu, Sampath Nagar, Erode, Tamil Nadu 638011</span>
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faPhone} />
-                  <span>+91 90926 26262</span>
+                  <span>+91 97506 37980</span>
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faEnvelope} />
@@ -77,29 +74,22 @@ const Footer = () => {
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faClock} />
-                  <span>Mon-Sat: 10:00 AM - 8:00 PM</span>
+                  <span>Mon-Sat: 10:00 AM - 7:00 PM</span>
                 </li>
               </ul>
             </div>
 
-            <div className="footer-newsletter">
-              <h3>Newsletter</h3>
-              <p>Subscribe to our newsletter for beauty tips and exclusive offers</p>
-              <form className="newsletter-form">
-                <input type="email" placeholder="Your Email Address" required />
-                <button type="submit">Subscribe</button>
-              </form>
-            </div>
+            
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Thenu's Makeover. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Thenu's Style Studio. All Rights Reserved.</p>
           <div className="footer-bottom-links">
-            <Link to="/privacy-policy">Privacy Policy</Link>
-            <Link to="/terms-of-service">Terms of Service</Link>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
           </div>
         </div>
       </div>

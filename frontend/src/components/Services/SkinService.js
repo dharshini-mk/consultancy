@@ -1,6 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./Services.css"
+import s1 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s1.jpg";
+import s2 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s2.jpg";
+import s3 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s3.jpg";
+import s4 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s4.webp";
+import s5 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s5.jpg";
+import s6 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s6.jpg";
 
 const SkinService = () => {
   const skinServices = [
@@ -10,7 +16,7 @@ const SkinService = () => {
       description: "Deep cleansing facial to remove impurities and rejuvenate your skin.",
       price: "₹800 - ₹1500",
       duration: "45-60 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: s1,
     },
     {
       id: 2,
@@ -18,7 +24,7 @@ const SkinService = () => {
       description: "Specialized treatment to reduce fine lines and wrinkles for youthful skin.",
       price: "₹2000 - ₹4000",
       duration: "60-90 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: s2,
     },
     {
       id: 3,
@@ -26,7 +32,7 @@ const SkinService = () => {
       description: "Intense hydration for dry and dehydrated skin types.",
       price: "₹1200 - ₹2500",
       duration: "60 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: s3,
     },
     {
       id: 4,
@@ -34,7 +40,7 @@ const SkinService = () => {
       description: "Targeted treatment for acne-prone skin to reduce breakouts and inflammation.",
       price: "₹1500 - ₹3000",
       duration: "60-75 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: s4,
     },
     {
       id: 5,
@@ -42,7 +48,7 @@ const SkinService = () => {
       description: "Treatment to reduce pigmentation and even out skin tone for a radiant complexion.",
       price: "₹1800 - ₹3500",
       duration: "75-90 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: s5,
     },
     {
       id: 6,
@@ -50,7 +56,7 @@ const SkinService = () => {
       description: "Full body exfoliation and moisturizing treatment for smooth, glowing skin.",
       price: "₹3000 - ₹6000",
       duration: "90-120 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: s6,
     },
   ]
 

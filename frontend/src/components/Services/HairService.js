@@ -1,6 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./Services.css"
+import h1 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h1.jpg";
+import h2 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h2.jpeg";
+import h3 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h3.jpg";
+import h4 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h4.jpg";
+import h5 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h5.jpeg";
+import h6 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h6.jpg";
 
 const HairService = () => {
   const hairServices = [
@@ -10,7 +16,7 @@ const HairService = () => {
       description: "Professional haircut and styling tailored to your face shape and preferences.",
       price: "₹500 - ₹1500",
       duration: "45-60 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: h1,
     },
     {
       id: 2,
@@ -18,7 +24,7 @@ const HairService = () => {
       description: "Full hair coloring with premium products for vibrant, long-lasting results.",
       price: "₹1500 - ₹4000",
       duration: "90-120 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: h2,
     },
     {
       id: 3,
@@ -26,7 +32,7 @@ const HairService = () => {
       description: "Add dimension to your hair with expertly placed highlights and lowlights.",
       price: "₹2000 - ₹5000",
       duration: "120-180 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: h3,
     },
     {
       id: 4,
@@ -34,7 +40,7 @@ const HairService = () => {
       description: "Nourishing treatments to repair damaged hair and restore shine and health.",
       price: "₹1000 - ₹3000",
       duration: "45-60 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: h4,
     },
     {
       id: 5,
@@ -42,7 +48,7 @@ const HairService = () => {
       description: "Quality hair extensions for added length and volume.",
       price: "₹5000 - ₹15000",
       duration: "180-240 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: h5,
     },
     {
       id: 6,
@@ -50,7 +56,7 @@ const HairService = () => {
       description: "Smoothing keratin treatment to eliminate frizz and add shine.",
       price: "₹4000 - ₹8000",
       duration: "120-180 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: h6,
     },
   ]
 

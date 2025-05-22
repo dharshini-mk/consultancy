@@ -13,7 +13,6 @@ import HairService from "./components/Services/HairService"
 import SkinService from "./components/Services/SkinService"
 import BridalService from "./components/Services/BridalService"
 import NailService from "./components/Services/NailService"
-import AboutUs from "./components/About/AboutUs"
 import AppointmentConfirmation from "./components/Appointment/AppointmentConfirmation"
 import "react-toastify/dist/ReactToastify.css"
 import "./App.css"
@@ -37,7 +36,6 @@ function App() {
           <Route path="/services/skin" element={<SkinService />} />
           <Route path="/services/bridal" element={<BridalService />} />
           <Route path="/services/nails" element={<NailService />} />
-          <Route path="/about" element={<AboutUs />} />
           <Route path="/admin/login" element={<AuthPage token={token} setToken={setToken} />} />
           <Route
             path="/admin/dashboard"

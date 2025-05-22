@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom"
 import "./Services.css"
+import n1 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n1.webp";
+import n2 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n2.jpg";
+import n3 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n3.jpg";
+import n4 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n4.jpg";
+import n5 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n5.jpg";
+import n6 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n6.jpg";
 
 const NailService = () => {
   const nailServices = [
@@ -9,7 +15,7 @@ const NailService = () => {
       description: "Basic nail care including shaping, cuticle care, and polish application.",
       price: "₹500 - ₹800",
       duration: "30-45 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: n1,
     },
     {
       id: 2,
@@ -17,7 +23,7 @@ const NailService = () => {
       description: "Luxurious foot treatment with exfoliation, massage, and polish.",
       price: "₹800 - ₹1200",
       duration: "45-60 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: n2,
     },
     {
       id: 3,
@@ -25,7 +31,7 @@ const NailService = () => {
       description: "Long-lasting gel polish application for chip-free, glossy nails.",
       price: "₹1200 - ₹1800",
       duration: "45-60 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: n3,
     },
     {
       id: 4,
@@ -33,7 +39,7 @@ const NailService = () => {
       description: "Acrylic or gel extensions to add length and strength to natural nails.",
       price: "₹2000 - ₹3500",
       duration: "90-120 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: n4,
     },
     {
       id: 5,
@@ -41,7 +47,7 @@ const NailService = () => {
       description: "Creative designs and embellishments to personalize your manicure.",
       price: "₹500 - ₹1500 (additional)",
       duration: "15-45 min (additional)",
-      image: "/placeholder.svg?height=200&width=300",
+      image: n5,
     },
     {
       id: 6,
@@ -49,7 +55,7 @@ const NailService = () => {
       description: "Complete hand and foot care package with polish application.",
       price: "₹1200 - ₹2000",
       duration: "75-90 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: n6,
     },
   ]
 

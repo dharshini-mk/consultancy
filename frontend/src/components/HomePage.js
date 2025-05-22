@@ -26,49 +26,27 @@ import "swiper/css/pagination"
 import "swiper/css/effect-fade"
 import "aos/dist/aos.css"
 import "../styles/home.css"
+import placeholder from '../assets/images/placeholder.png';
 
 // Import images
 import hero1 from "../assets/images/hero1.jpg"
 import hero2 from "../assets/images/hero2.jpg"
 import hero3 from "../assets/images/hero3.jpg"
-import aboutImg from "../assets/images/about-section.jpg"
 import hairService from "../assets/images/hair-service.jpg"
 import skinService from "../assets/images/skin-service.jpg"
 import bridalService from "../assets/images/bridal-service.jpg"
 import nailsService from "../assets/images/nails-service.jpg"
 
 const HomePage = () => {
-  const [activeTab, setActiveTab] = useState("Hair Style")
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       once: true,
     })
   }, [])
 
-  const tabContent = {
-    "Hair Style": {
-      description:
-        "Transform your tresses with expert cuts, styling, and color at Thenu's Makeover! From trendy layers to nourishing treatments, we bring out the best in your hair.",
-      image: hairService,
-    },
-    "Skin Care": {
-      description:
-        "Rejuvenate your skin with our premium facials and treatments. Our skilled estheticians use high-quality products to give you that perfect glow.",
-      image: skinService,
-    },
-    Bridal: {
-      description:
-        "Make your special day unforgettable with our comprehensive bridal packages. From makeup to hair styling, we ensure you look nothing short of perfect.",
-      image: bridalService,
-    },
-    "Nail Art": {
-      description:
-        "Express yourself through our creative nail art services. Our nail technicians are skilled in the latest trends and techniques for beautiful, long-lasting results.",
-      image: nailsService,
-    },
-  }
+  
 
   const testimonials = [
     {
@@ -267,16 +245,16 @@ const HomePage = () => {
           <div className="container">
             <div className="about-grid">
               <div className="about-image" data-aos="fade-right">
-                <img src={aboutImg || "/placeholder.svg"} alt="About Thenu's Makeover" />
+                <img src={placeholder} alt="About Thenu's Style Studio" />
                 <div className="experience-badge">
-                  <span className="years">10+</span>
+                  <span className="years">14+</span>
                   <span className="text">Years of Excellence</span>
                 </div>
               </div>
               <div className="about-content" data-aos="fade-left">
-                <h2 className="section-title text-left">About Thenu's Makeover</h2>
+                <h2 className="section-title text-left">About Thenu's Style Studio</h2>
                 <p className="about-description">
-                  Founded in 2010, Thenu's Makeover has established itself as a premier beauty destination, offering
+                  Founded in 2010, Thenu's Style Studio has established itself as a premier beauty destination, offering
                   exceptional services in a luxurious and welcoming environment.
                 </p>
                 <p className="about-description">
@@ -308,55 +286,9 @@ const HomePage = () => {
                     </div>
                     <div className="feature-text">
                       <h4>Convenient Hours</h4>
-                      <p>Open 7 days a week for your convenience</p>
+                      <p>Open 6 days a week for your convenience</p>
                     </div>
                   </div>
-                </div>
-                <Link to="/about" className="btn btn-outline about-btn">
-                  Learn More About Us
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Services Tabs Section */}
-        <section className="section services-tabs">
-          <div className="container">
-            <h2 className="section-title" data-aos="fade-up">
-              Our Signature Services
-            </h2>
-            <p className="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-              Explore our most popular beauty treatments and services
-            </p>
-
-            <div className="tabs-container" data-aos="fade-up" data-aos-delay="200">
-              <div className="tabs">
-                {Object.keys(tabContent).map((tab) => (
-                  <div
-                    key={tab}
-                    className={`tab ${activeTab === tab ? "active" : ""}`}
-                    onClick={() => setActiveTab(tab)}
-                  >
-                    {tab}
-                    {activeTab === tab && <div className="tab-indicator"></div>}
-                  </div>
-                ))}
-              </div>
-
-              <div className="tab-content">
-                <div className="tab-text">
-                  <h3>{activeTab}</h3>
-                  <p>{tabContent[activeTab].description}</p>
-                  <Link
-                    to={`/services/${activeTab === "Hair Style" ? "hair" : activeTab === "Skin Care" ? "skin" : activeTab === "Bridal" ? "bridal" : "nails"}`}
-                    className="btn btn-primary tab-btn"
-                  >
-                    Learn More
-                  </Link>
-                </div>
-                <div className="tab-image">
-                  <img src={tabContent[activeTab].image || "/placeholder.svg"} alt={activeTab} />
                 </div>
               </div>
             </div>
@@ -370,7 +302,7 @@ const HomePage = () => {
               What Our Clients Say
             </h2>
             <p className="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-              Read what our satisfied clients have to say about their experience at Thenu's Makeover
+              Read what our satisfied clients have to say about their experience at Thenu's Style Studio
             </p>
 
             <div className="testimonials-container" data-aos="fade-up" data-aos-delay="200">

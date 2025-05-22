@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom"
 import "./Services.css"
+import b1 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b1.jpeg";
+import b2 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b2.jpg";
+import b3 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b3.jpg";
+import b4 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b4.jpeg";
+import b5 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b5.jpg";
+import b6 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b6.jpg";
+
 
 const BridalService = () => {
   const bridalServices = [
@@ -9,7 +16,7 @@ const BridalService = () => {
       description: "Complete bridal makeup using premium products for your special day.",
       price: "₹8000 - ₹15000",
       duration: "90-120 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: b1,
     },
     {
       id: 2,
@@ -17,7 +24,7 @@ const BridalService = () => {
       description: "Elegant and intricate hairstyling to complement your bridal look.",
       price: "₹4000 - ₹8000",
       duration: "60-90 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: b2,
     },
     {
       id: 3,
@@ -25,7 +32,7 @@ const BridalService = () => {
       description: "Comprehensive beauty treatments in the weeks leading up to your wedding.",
       price: "₹15000 - ₹30000",
       duration: "Multiple sessions",
-      image: "/placeholder.svg?height=200&width=300",
+      image: b3,
     },
     {
       id: 4,
@@ -33,7 +40,7 @@ const BridalService = () => {
       description: "Stunning makeup for your engagement ceremony or pre-wedding photoshoot.",
       price: "₹5000 - ₹10000",
       duration: "60-90 min",
-      image: "/placeholder.svg?height=200&width=300",
+      image: b4,
     },
     {
       id: 5,
@@ -41,7 +48,7 @@ const BridalService = () => {
       description: "Makeup services for the bride's family members and bridesmaids.",
       price: "₹3000 - ₹5000 per person",
       duration: "45-60 min per person",
-      image: "/placeholder.svg?height=200&width=300",
+      image: b5,
     },
     {
       id: 6,
@@ -49,7 +56,7 @@ const BridalService = () => {
       description: "Complete beauty services for destination weddings including travel.",
       price: "₹50000 - ₹100000",
       duration: "Custom",
-      image: "/placeholder.svg?height=200&width=300",
+      image: b6,
     },
   ]
 
