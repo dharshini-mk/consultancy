@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./Services.css"
-import s1 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s1.jpg";
-import s2 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s2.jpg";
-import s3 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s3.jpg";
-import s4 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s4.webp";
-import s5 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s5.jpg";
-import s6 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/s6.jpg";
+import s1 from "../../assets/images/s1.jpg";
+import s2 from "../../assets/images/s2.jpg";
+import s3 from "../../assets/images/s3.jpg";
+import s4 from "../../assets/images/s4.webp";
+import s5 from "../../assets/images/s5.jpg";
+import s6 from "../../assets/images/s6.jpg";
 
 const SkinService = () => {
   const skinServices = [

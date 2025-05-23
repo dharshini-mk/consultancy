@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 import "./Services.css"
-import b1 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b1.jpeg";
-import b2 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b2.jpg";
-import b3 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b3.jpg";
-import b4 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b4.jpeg";
-import b5 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b5.jpg";
-import b6 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/b6.jpg";
+import b1 from "../../assets/images/b1.jpeg";
+import b2 from "../../assets/images/b2.jpg";
+import b3 from "../../assets/images/b3.jpg";
+import b4 from "../../assets/images/b4.jpeg";
+import b5 from "../../assets/images/b5.jpg";
+import b6 from "../../assets/images/b6.jpg";
 
 
 const BridalService = () => {

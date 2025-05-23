@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 import "./Services.css"
-import n1 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n1.webp";
-import n2 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n2.jpg";
-import n3 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n3.jpg";
-import n4 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n4.jpg";
-import n5 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n5.jpg";
-import n6 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/n6.jpg";
+import n1 from "../../assets/images/n1.webp";
+import n2 from "../../assets/images/n2.jpg";
+import n3 from "../../assets/images/n3.jpg";
+import n4 from "../../assets/images/n4.jpg";
+import n5 from "../../assets/images/n5.jpg";
+import n6 from "../../assets/images/n6.jpg";
 
 const NailService = () => {
   const nailServices = [

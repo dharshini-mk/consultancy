@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./Services.css"
-import h1 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h1.jpg";
-import h2 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h2.jpeg";
-import h3 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h3.jpg";
-import h4 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h4.jpg";
-import h5 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h5.jpeg";
-import h6 from "C:/Users/Admin/CSE_Projects/beauty/frontend/src/assets/images/h6.jpg";
+import h1 from "../../assets/images/h1.jpg";
+import h2 from "../../assets/images/h2.jpeg";
+import h3 from "../../assets/images/h3.jpg";
+import h4 from "../../assets/images/h4.jpg";
+import h5 from "../../assets/images/h5.jpeg";
+import h6 from "../../assets/images/h6.jpg";
 
 const HairService = () => {
   const hairServices = [
